@@ -1,2 +1,1 @@
-# hello_world
-Simple Python Hello World
+# devfile-sample-python-basic
