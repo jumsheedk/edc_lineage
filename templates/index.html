@@ -1,11 +1,27 @@
-
 {% extends 'base.html' %}
-
 
 {% block content %}
 
 <div class="container">
-    <h1>Hello world!</h1>
-</div>
 
+<form action="/submit" method="POST">
+  <div class="mb-3">
+
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+    placeholder="Schema Name" name = "schema_name">
+    </div>
+  <div class="mb-3">
+
+    <input type="text" class="form-control" id="exampleInputPassword1"
+    placeholder="Table Name" name = "table_name">
+  </div>
+  <div class="mb-3">
+
+    <input type="text" class="form-control" id="exampleInputPassword1"
+    placeholder="Column Name" name = "column_name">
+  </div>
+<br>
+  <button type="submit" class="btn btn-secondary">Submit</button>
+</form>
+</div>
 {% endblock %}

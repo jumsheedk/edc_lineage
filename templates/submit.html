@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <form class="POST" action="" method="post">
-      <fieldset>
-        
-      </fieldset>
-    </form>
 
-  </body>
-</html>
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <h1>Column Lineage</h1>
+
+    <p>
+      <ol>
+        {% for item in names %}
+          <li>{{ item }}</li>
+        {% endfor %}
+        </ol>
+    <p>
+      
+</div>
+
+{% endblock %}
